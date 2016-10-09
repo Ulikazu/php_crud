@@ -61,7 +61,7 @@
 	<div class="container">
 		<h1>You are about to delete the following project:</h1>
 		<p><?= $project['project_id'].' - '.$project['project_name'] ?>. <br> Note that this will not delete the client, <?= $client['client_name'] ?>, attached to the project, only the project itself.</p>
-		<p>Not what you wanted to do? <a href="client.php?id=<?= $_GET['id'] ?>">Go back.</a></p>
+		<p>Not what you wanted to do? <a href="project.php?id=<?= $_GET['id'] ?>">Go back.</a></p>
 		<form action="<?= $_SERVER['PHP_SELF'].'?id='.$_GET['id'] ?>" method="post">
 			<input type="submit" value="Delete" name="delete">
 		</form>
